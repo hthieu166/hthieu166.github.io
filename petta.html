@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PeTTA: Persistent Test-time Adaptation in Recurring Testing Scenarios">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PeTTA: Persistent Test-time Adaptation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="font_awesome/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="images/uiuc_logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="font_awesome/js/all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://hthieu.web.illinois.edu/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://dneproject.web.illinois.edu/">
+            Digitized Neurological Examination
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PeTTA: Persistent Test-time Adaptation in Recurring Testing Scenarios (NeurIPS 2024)</h1>
+          <div class=" is-size-5">
+            38<sup>th</sup> Conference on Neural Information Processing Systems (NeurIPS)
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://hthieu.web.illinois.edu/">Trung-Hieu Hoang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://vmdlab.github.io/">Duc Minh Vo</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://minhdo.ece.illinois.edu/">Minh N. Do</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Illinois at Urbana-Champaign,</span>
+            <span class="author-block"><sup>2</sup>The University of Tokyo</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2311.18193"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2311.18193"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/hthieu166/petta"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/hthieu166/petta"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      
+      <img src="static/images/petta_cvpr24poster.png" alt="cvprw24_posters" height="100">
+      
+      <h2 class="subtitle has-text-centered"> 
+        <img src="static/images/medal.png" width="35" height="35" alt="medal">
+         We are thrilled to receive the Best paper award (community track) at <a href="https://tta-cvpr2024.github.io/" target="_blank">the 1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT)</a>, CVPR 2024 in Seattle.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Current test-time adaptation (TTA) approaches aim to adapt to environments that change continuously. 
+            Yet, it is unclear whether TTA methods can maintain their adaptability over prolonged periods. 
+            To answer this question, we introduce a diagnostic setting - <b>recurring TTA</b> where environments not only change but also recur over time, 
+            creating an extensive data stream. 
+            This setting allows us to examine the error accumulation of TTA models, in the most basic scenario, when they are regularly exposed to previous 
+            testing environments. Furthermore, we simulate a TTA process on a simple yet representative - <b>perturbed Gaussian Mixture Model Classifier</b>, 
+            deriving theoretical insights into the dataset- and algorithm-dependent factors contributing to gradual performance degradation. 
+            Our investigation leads us to propose <b>persistent TTA (PeTTA)</b>, which senses when the model is diverging towards collapse and adjusts the 
+            adaptation strategy, striking a balance between the dual objectives of adaptation and model collapse prevention. 
+            The supreme stability of PeTTA over existing approaches, in the face of lifelong TTA scenarios, has been demonstrated over comprehensive experiments on various benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{hoang2024petta,
+      title = {Persistent Test-time Adaptation in Recurring Testing Scenarios},
+      author = {Trung-Hieu Hoang and Duc Minh Vo and Minh N. Do},
+      booktitle = {Thirty-eighth Conference on Neural Information Processing Systems (NeurIPS)},
+      year = {2024},
+    }
+</code></pre>
+</div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website borrows this <a
+            href="https://github.com/nerfies/nerfies.github.io">source code</a> (licensed under a <a rel="license"
+            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>). 
+            We thank the authors for sharing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
