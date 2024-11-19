@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="PeTTA: Persistent Test-time Adaptation in Recurring Testing Scenarios">
+        content="RIP: A Simple Black-box Attack on Continual Test-time Adaptation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PeTTA: Persistent Test-time Adaptation</title>
+  <title>RIP: Black-box Test-time Adaptation Attack</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -48,11 +48,11 @@
           More Research
         </a>
         <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hthieu166.github.io/petta">
+            Persistent Test-Time Adaptation
+          </a>
           <a class="navbar-item" href="https://dneproject.web.illinois.edu/">
             Digitized Neurological Examination
-          </a>
-          <a class="navbar-item" href="https://hthieu166.github.io/rip">
-            Black-box TTA Attack
           </a>
         </div>
       </div>
@@ -67,9 +67,9 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PeTTA: Persistent Test-time Adaptation in Recurring Testing Scenarios (NeurIPS 2024)</h1>
+          <h1 class="title is-1 publication-title">RIP <img src="static/images/grave.png" width="50" height="50">: A Simple Black-box Attack on Continual Test-time Adaptation</h1>
           <div class=" is-size-5">
-            38<sup>th</sup> Conference on Neural Information Processing Systems (NeurIPS)
+            <!-- 38<sup>th</sup> Conference on Neural Information Processing Systems (NeurIPS) -->
           </div>
           
           <div class="is-size-5 publication-authors">
@@ -90,7 +90,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://openreview.net/forum?id=ffeUBoTcdS"
                    target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
@@ -99,9 +99,9 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2311.18193"
+                <a href=""
                    target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -122,7 +122,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/hthieu166/petta"
+                <a href=""
                    target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -132,7 +132,7 @@
                   </a>
               </span>
               <!-- Slide Link. -->
-               <span class="link-block">
+               <!-- <span class="link-block">
                 <a href="https://neurips.cc/media/neurips-2024/Slides/94192.pdf"
                    target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
@@ -141,10 +141,10 @@
                   </span>
                   <span>Slides</span>
                   </a>
-              </span>
+              </span> -->
 
               <!-- Slide Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://recorder-v3.slideslive.com/?share=92916&s=1ec28a07-1faa-4827-a491-3b2c1c5093c1"
                    target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
@@ -153,7 +153,7 @@
                   </span>
                   <span>SlidesLive</span>
                   </a>
-              </span>
+              </span> -->
 
               <!-- Dataset Link. -->
               <!-- <span class="link-block">
@@ -177,15 +177,20 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <a href="static/images/2024_10_neurips24_petta_poster.pdf" target="_blank">
-        <img src="static/images/petta_poster.png" alt="cvprw24_posters" height="100">
-      </a>
-      <p class="has-text-centered"><i>(Click on the poster to enlarge)</i></p>
+      <p class="has-text-centered">
+        <a href="" target="_blank">
+          <img src="static/images/rip.svg" alt="rip_overview" height="100" style="margin:20px 0px">
+        </a>
+      </p>
       
-      <h2 class="subtitle has-text-centered"> 
+
+      <p class="has-text-centered">An illustration of our <b><u>R</u>eusing of <u>I</u>ncorrect <u>P</u>redictions (RIP)</b> attack against a continual  test-time adaptation (TTA) method. Here the attacker intentionally reuses samples that were incorrectly predicted in the subsequent rounds to make the model more confident in these erroneous predictions. RIP is the first black-box attack that can realistically collapse a TTA model.</p>
+      <!-- <p class="has-text-centered"><i>(Click on the poster to enlarge)</i></p> -->
+      
+      <!-- <h2 class="subtitle has-text-centered"> 
         <img src="static/images/medal.png" width="35" height="35" alt="medal">
          We are thrilled to receive the Best Paper Award (community track) at <a href="https://tta-cvpr2024.github.io/" target="_blank">the 1st Workshop on Test-Time Adaptation: Model, Adapt Thyself! (MAT)</a>, CVPR 2024 in Seattle.
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
@@ -198,16 +203,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Current test-time adaptation (TTA) approaches aim to adapt to environments that change continuously. 
-            Yet, it is unclear whether TTA methods can maintain their adaptability over prolonged periods. 
-            To answer this question, we introduce a diagnostic setting - <b>recurring TTA</b> where environments not only change but also recur over time, 
-            creating an extensive data stream. 
-            This setting allows us to examine the error accumulation of TTA models, in the most basic scenario, when they are regularly exposed to previous 
-            testing environments. Furthermore, we simulate a TTA process on a simple yet representative <b>	&epsilon;-perturbed Gaussian Mixture Model Classifier</b>, 
-            deriving theoretical insights into the dataset- and algorithm-dependent factors contributing to gradual performance degradation. 
-            Our investigation leads us to propose <b>persistent TTA (PeTTA)</b>, which senses when the model is diverging towards collapse and adjusts the 
-            adaptation strategy, striking a balance between the dual objectives of adaptation and model collapse prevention. 
-            The supreme stability of PeTTA over existing approaches, in the face of lifelong TTA scenarios, has been demonstrated over comprehensive experiments on various benchmarks.
+            Test-time adaptation (TTA) has emerged as a promising solution to tackle the continual domain shift in machine learning by allowing model parameters to change at test time, via self-supervised learning on unlabeled testing data. 
+            At the same time, it unfortunately opens the door to unforeseen vulnerabilities for degradation over time. 
+            Through a simple theoretical continual TTA model, we successfully identify a risk in the sampling process of testing data that could easily degrade the performance of a continual TTA model. 
+            We name this risk as <b>Reusing of Incorrect Prediction (RIP)</b> that TTA attackers can employ or as a result of the unintended query from general TTA users. 
+            The risk posed by RIP is also highly realistic, as it does not require prior knowledge of model parameters or modification of testing samples. 
+            This simple requirement makes RIP as <b>the first black-box</b> TTA attack algorithm that stands out from existing white-box attempts. 
+            We extensively benchmark the performance of the most recent continual TTA approaches when facing the RIP attack, providing insights on its success, and laying out potential roadmaps that could enhance the resilience of future continual TTA systems.
           </p>
         </div>
       </div>
@@ -232,12 +234,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{hoang2024petta,
+    <pre><code>
+      <!-- @inproceedings{hoang2024petta,
       title = {Persistent Test-time Adaptation in Recurring Testing Scenarios},
       author = {Trung-Hieu Hoang and Duc Minh Vo and Minh N. Do},
       booktitle = {Thirty-eighth Conference on Neural Information Processing Systems (NeurIPS)},
       year = {2024},
-    }
+    } -->
 </code></pre>
 </div>
 </section>
